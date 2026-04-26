@@ -9,6 +9,7 @@ import unccLogo from './assets/uncc-logo.png'
 import crest from './assets/pdt-crest.png'
 import shield from './assets/pdt-shield.png'
 import letters from './assets/pdt-letters.png'
+import "./index.css";
 
 const NAV = [
   { key: 'home', label: 'Home', icon: Home },
