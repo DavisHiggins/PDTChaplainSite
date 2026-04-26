@@ -14,10 +14,10 @@
     "react-dom": "latest",
     "framer-motion": "latest",
     "lucide-react": "latest"
-    "@tailwindcss/postcss": "latest"
   },
   "devDependencies": {
     "tailwindcss": "latest",
+    "@tailwindcss/postcss": "latest"
     "postcss": "latest",
     "autoprefixer": "latest"
   }
