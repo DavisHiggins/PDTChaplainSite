@@ -22,10 +22,10 @@ import {
   Landmark,
 } from 'lucide-react'
 
-import headshot from './assets/cleanerheadshot.jpeg'
-import pdtLogo from './assets/PDTLogo.webp'
-import pdtCrest from './assets/Phi_Delta_Theta_Crest.png'
-import unccLogo from './assets/uncclogotrans.png'
+import headshot from './assets/headshot.jpeg'
+import pdtLogo from './assets/pdt-logo.webp'
+import pdtCrest from './assets/pdt-crest.png'
+import unccLogo from './assets/uncc-logo.png'
 
 const NAV_ITEMS = [
   { label: 'Home', key: 'home', icon: Home },
