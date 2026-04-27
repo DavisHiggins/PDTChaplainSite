@@ -333,7 +333,7 @@ function HomePage({ setActivePage, currentStudy }) {
           <div className="heroText">
             <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · UNC Charlotte</div>
             <h1>Phi Delta Theta Chaplain Platform</h1>
-            <div className="heroSubTitle">Faith, brotherhood, and accountability.</div>
+            <div className="heroSubTitle">Faith, brotherhood, and accountability</div>
             <p className="heroLead">
               A centralized home for weekly Bible study, scripture planning, and spiritual leadership within Phi Delta Theta at UNC Charlotte.
             </p>
