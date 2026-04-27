@@ -748,15 +748,17 @@ function AppStyles() {
           flex-direction: column;
           justify-content: flex-start;
         }
-        
-        .logoShowcase .aboutSectionShield {
-          width: 118px !important;
-          height: 46px !important;
-          object-fit: contain;
-          object-position: left center;
-          margin: 0 0 58px 0;
-          display: block;
-        }
+        .logoShowcase img,
+          .logoShowcase .aboutSectionShield {
+            width: 150px !important;
+            height: auto !important;
+            max-width: 150px !important;
+            max-height: 72px !important;
+            object-fit: contain;
+            object-position: left center;
+            display: block;
+            margin: 0 0 150px 0;
+          }
       }
     `}</style>
   )
