@@ -328,7 +328,7 @@ function HomePage({ setActivePage, currentStudy }) {
         <div className="heroGlow heroGlowTwo" />
         <div className="heroContent">
           <div className="heroText">
-            <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Charlotte, NC</div>
+            <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · UNC Charlotte</div>
             <h1>Phi Delta Theta Chaplain Platform</h1>
             <div className="heroSubTitle">Faith, brotherhood, and accountability.</div>
             <p className="heroLead">
