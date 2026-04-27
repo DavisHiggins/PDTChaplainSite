@@ -376,8 +376,8 @@ function HomePage({ setActivePage, currentStudy }) {
           </p>
         </div>
         <div className="glassCard largePad">
-          <div className="cardTopline"><Clock size={17} /> Weekly Structure</div>
-          <h2>Bible Study Every Week</h2>
+          <div className="cardTopline"><Clock size={17} /> Structure</div>
+          <h2>Weekly Bible Study</h2>
           <p>
             Every Thursday will be reserved for Bible study. The calendar gives a clear view of upcoming meetings, while the scripture plan shows exactly what passage and theme will be covered each week.
           </p>
@@ -405,7 +405,7 @@ function CalendarPage() {
       <SectionHeader
         eyebrow="Weekly Rhythm"
         title="Bible Study Calendar"
-        subtitle="Every Thursday we have a Bible Study session. If there are any updates in timing, location, or scripture of any events, those changes will be reflected here."
+        subtitle="Every Thursday we have a Bible Study session. The time, location, and passage for all events can be found below. If there is an information change to an upcoming event, the update will be reflected here."
       />
 
       <div className="calendarShell">
@@ -458,7 +458,7 @@ function ScripturePage({ currentStudy }) {
       <SectionHeader
         eyebrow="Semester Roadmap"
         title="Scripture Plan"
-        subtitle="16-week plan for the Fall semester built around John, Philippians, and Colossians to focus on Jesus, confidence, discipline, leadership, and spiritual growth."
+        subtitle="16-week plan for the Fall semester built around John, Philippians, and Colossians, focusing on Jesus, confidence, discipline, leadership, and spiritual growth."
       />
 
       <div className="bookGrid">
