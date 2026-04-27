@@ -562,7 +562,7 @@ function AboutPage() {
               objectFit: 'contain',
               objectPosition: 'left center',
               display: 'block',
-              marginLeft: '-14px',
+              marginLeft: '-25px',
               marginBottom: '26px',
             }}
           />
