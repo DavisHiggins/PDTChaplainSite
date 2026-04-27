@@ -329,7 +329,7 @@ function HomePage({ setActivePage, currentStudy }) {
         <div className="heroContent">
           <div className="heroText">
             <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Chaplain</div>
-            <h1>Faith, brotherhood, and accountability.</h1>
+            <h1>Faith, brotherhood, and accountability | .</h1>
             <p className="heroLead">
               A centralized home for weekly Bible study, scripture planning, and spiritual leadership within Phi Delta Theta at UNC Charlotte.
             </p>
@@ -349,7 +349,7 @@ function HomePage({ setActivePage, currentStudy }) {
             <div className="crestPanel">
               <img src={pdtCrest} alt="Phi Delta Theta crest" className="crestImg" />
               <div className="crestInfo">
-                <div className="smallLabel">This Week</div>
+                <div className="smallLabel">This Week's Message</div>
                 <h3>{currentStudy.title}</h3>
                 <p>{currentStudy.passage}</p>
               </div>
@@ -404,7 +404,7 @@ function CalendarPage() {
       <SectionHeader
         eyebrow="Weekly Rhythm"
         title="Bible Study Calendar"
-        subtitle="Every Thursday is marked for Bible Study. The calendar opens to the current month automatically, and today is highlighted in light blue."
+        subtitle="Every Thursday we have a Bible Study session. If there are any updates in timing, location, or scripture of any events, those changes will be reflected here."
       />
 
       <div className="calendarShell">
@@ -490,7 +490,7 @@ function ScripturePage({ currentStudy }) {
             </div>
             <div className="currentStudyRight">
               <img src={pdtShield} alt="Phi Delta Theta shield" />
-              <p>Switches to the next scheduled passage every Friday at 12:00 AM.</p>
+              <p>Switches to the next scheduled passage every Friday.</p>
             </div>
           </div>
         ) : (
@@ -525,7 +525,7 @@ function AboutPage() {
       <SectionHeader
         eyebrow="Leadership & Brotherhood"
         title="About"
-        subtitle="A brief look at the person behind the role, the values behind the fraternity, and the chapter this site is built to serve."
+        subtitle="A brief look at the man behind the role, the values behind the fraternity, and the chapter this site is built to serve."
       />
 
       <div className="aboutHero">
@@ -533,10 +533,10 @@ function AboutPage() {
           <img src={headshot} alt="Davis Higgins headshot" />
         </div>
         <div className="aboutText">
-          <div className="smallLabel">Chaplain Candidate · VP of Philanthropy</div>
+          <div className="smallLabel">Chaplain · VP of Philanthropy</div>
           <h2>Davis Higgins</h2>
           <p>
-            I created this site to bring structure, consistency, and professionalism to the Chaplain role. My goal is to make Bible study easy to follow, spiritually meaningful, and genuinely useful for brothers navigating school, pressure, leadership, and personal growth.
+            This site was designed to bring structure, consistency, and professionalism to the Chaplain role. My goal is to make Bible study easy to follow, spiritually meaningful, and genuinely useful for brothers navigating college, pressure, leadership, and personal growth.
           </p>
           <div className="aboutTags">
             <span>Faith</span><span>Discipline</span><span>Accountability</span><span>Brotherhood</span>
@@ -550,10 +550,10 @@ function AboutPage() {
 
       <div className="gridTwo mt24">
         <div className="glassCard largePad">
-          <div className="cardTopline"><Shield size={17} /> Phi Delta Theta</div>
+          <div className="cardTopline"><Sword size={17} /> Phi Delta Theta</div>
           <h2>Built on principled brotherhood.</h2>
           <p>
-            Phi Delta Theta is rooted in the Cardinal Principles of Friendship, Sound Learning, and Rectitude. This Chaplain structure is designed to reinforce those values through consistent faith-based discussion, encouragement, and accountability.
+            Phi Delta Theta is rooted in the Cardinal Principles of Friendship, Sound Learning, and Rectitude. This Chaplain structure reinforcres those values through consistent faith-based discussion, encouragement, and accountability.
           </p>
         </div>
         <div className="glassCard largePad logoShowcase">
