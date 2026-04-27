@@ -740,11 +740,19 @@ function AppStyles() {
         .innerTabs { width: 100%; border-radius: 22px; flex-direction: column; }
         .currentStudyLeft h2, .aboutText h2 { font-size: 34px; }
         .headshotFrame img { min-height: 340px; }
+        .logoShowcase {
+          min-height: 520px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        
         .aboutSectionShield {
-          width: 82px;
-          height: 82px;
+          width: 110px;
+          height: 42px;
           object-fit: contain;
-          margin-bottom: 18px;
+          object-position: left center;
+          margin-bottom: 64px;
         }
       }
     `}</style>
