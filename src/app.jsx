@@ -376,7 +376,7 @@ function HomePage({ setActivePage, currentStudy }) {
         </div>
         <div className="glassCard largePad">
           <div className="cardTopline"><Clock size={17} /> Weekly Structure</div>
-          <h2>Bible Study · Location TBD · Time TBD</h2>
+          <h2>Bible Study Every Week</h2>
           <p>
             Every Thursday will be reserved for Bible study. The calendar gives a clear view of upcoming meetings, while the scripture plan shows exactly what passage and theme will be covered each week.
           </p>
