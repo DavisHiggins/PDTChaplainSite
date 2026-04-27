@@ -457,7 +457,7 @@ function ScripturePage({ currentStudy }) {
       <SectionHeader
         eyebrow="Semester Roadmap"
         title="Scripture Plan"
-        subtitle="A simple 16-week plan built around John, Philippians, and Colossians to focus on Jesus, confidence, discipline, leadership, and brotherhood."
+        subtitle="16-week plan for the Fall semester built around John, Philippians, and Colossians to focus on Jesus, confidence, discipline, leadership, and spiritual growth."
       />
 
       <div className="bookGrid">
@@ -472,7 +472,7 @@ function ScripturePage({ currentStudy }) {
       <div className="tabCard mt24">
         <div className="innerTabs">
           <button className={innerTab === 'week' ? 'activeInnerTab' : ''} onClick={() => setInnerTab('week')}>This Week's Scripture</button>
-          <button className={innerTab === 'plan' ? 'activeInnerTab' : ''} onClick={() => setInnerTab('plan')}>Past, Present, and Future</button>
+          <button className={innerTab === 'plan' ? 'activeInnerTab' : ''} onClick={() => setInnerTab('plan')}>Scripture Library</button>
         </div>
 
         {innerTab === 'week' ? (
