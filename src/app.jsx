@@ -551,7 +551,11 @@ function AboutPage() {
 
       <div className="gridTwo mt24">
         <div className="glassCard largePad">
-          <div className="cardTopline">Phi Delta Theta</div>
+          <img
+            src={pdtShield}
+            alt="Phi Delta Theta shield"
+            className="aboutSectionShield"
+          />
           <h2>Built on Brotherhood</h2>
           <p>
             Phi Delta Theta is rooted in the Cardinal Principles of Friendship, Sound Learning, and Rectitude. This Chaplain structure reinforcres those values through consistent faith-based discussion, encouragement, and accountability.
@@ -736,6 +740,12 @@ function AppStyles() {
         .innerTabs { width: 100%; border-radius: 22px; flex-direction: column; }
         .currentStudyLeft h2, .aboutText h2 { font-size: 34px; }
         .headshotFrame img { min-height: 340px; }
+        .aboutSectionShield {
+          width: 82px;
+          height: 82px;
+          object-fit: contain;
+          margin-bottom: 18px;
+        }
       }
     `}</style>
   )
