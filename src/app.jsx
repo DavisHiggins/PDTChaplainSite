@@ -709,8 +709,10 @@ function AppStyles() {
       .aboutText { padding: 34px; display: flex; flex-direction: column; justify-content: center; }
       .aboutText h2 { margin: 12px 0 0; font-size: 48px; letter-spacing: -.05em; }
       .aboutText p { color: #bfccdc; line-height: 1.8; font-size: 17px; max-width: 720px; }
-      .logoShowcase img { max-width: 190px; max-height: 90px; object-fit: contain; margin: 0 0 4px; filter: brightness(0) saturate(100%) invert(78%) sepia(28%) saturate(730%) hue-rotate(176deg) brightness(105%) contrast(101%); }
-      .logoShowcase h2 { margin-top: 6px; }
+      .logoShowcase img {
+        max-width: none;
+        max-height: none;
+      }.logoShowcase h2 { margin-top: 6px; }
       .logoShowcase p { margin-top: 8px; }
       @media (max-width: 980px) {
         .nav { display: none; }
@@ -747,12 +749,13 @@ function AppStyles() {
           justify-content: flex-start;
         }
         
-        .aboutSectionShield {
-          width: 110px;
-          height: 42px;
+        .logoShowcase .aboutSectionShield {
+          width: 118px !important;
+          height: 46px !important;
           object-fit: contain;
           object-position: left center;
-          margin-bottom: 64px;
+          margin: 0 0 58px 0;
+          display: block;
         }
       }
     `}</style>
