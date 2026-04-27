@@ -328,8 +328,8 @@ function HomePage({ setActivePage, currentStudy }) {
         <div className="heroGlow heroGlowTwo" />
         <div className="heroContent">
           <div className="heroText">
-            <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Chaplain</div>
-            <h1>Official website for the Chaplain of Phi Delta Theta</h1>
+            <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Charlotte, NC</div>
+            <h1>Phi Delta Theta Chaplain Platform</h1>
             <div className="heroSubTitle">Faith, brotherhood, and accountability.</div>
             <p className="heroLead">
               A centralized home for weekly Bible study, scripture planning, and spiritual leadership within Phi Delta Theta at UNC Charlotte.
@@ -537,7 +537,7 @@ function AboutPage() {
           <div className="smallLabel">Chaplain · VP of Philanthropy</div>
           <h2>Davis Higgins</h2>
           <p>
-            This site was designed to bring structure, consistency, and professionalism to the Chaplain role. My goal is to make Bible study easy to follow, spiritually meaningful, and genuinely useful for brothers navigating college, pressure, leadership, and personal growth. I understand the difficulties that come with balancing school, work, family, a social life, hobbies, and a relationship with Jesus, especially while trying to excel in all of these aspects. This period of life is filled with uncertainty, stress, and unwanted anxiety. Fortunately, through faith and trust in our Savior Jesus Christ, our time in college can be enjoyed, appreciated, and spark personal growth you can take with you throughout the rest of life.
+            This site was created to bring structure, consistency, and professionalism to the Chaplain role. The goal is to make Bible study clear, meaningful, and genuinely useful for brothers navigating college, pressure, leadership, and personal growth. I understand the challenge of balancing school, work, relationships, and a walk with Jesus while striving to excel in each area. This stage of life often brings uncertainty and stress, but through faith and trust in Christ, it can become a time of growth, purpose, and lasting impact.
           </p>
           <div className="aboutTags">
             <span>Faith</span><span>Discipline</span><span>Accountability</span><span>Brotherhood</span>
