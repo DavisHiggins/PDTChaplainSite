@@ -11,6 +11,8 @@ import {
   Home,
   Info,
   MapPin,
+  MessageCircle,
+  PhoneCall,
   Shield,
   Sparkles,
   Star,
@@ -31,6 +33,7 @@ const NAV_ITEMS = [
   { label: 'Calendar', key: 'calendar', icon: CalendarDays },
   { label: 'Scripture Plan', key: 'scripture', icon: BookOpen },
   { label: 'About', key: 'about', icon: Info },
+  { label: 'Contact', key: 'contact', icon: PhoneCall },
 ]
 
 const semesterStartYear = 2026
@@ -597,6 +600,74 @@ function AboutPage() {
   )
 }
 
+
+function ContactPage() {
+  return (
+    <PageShell>
+      <SectionHeader
+        eyebrow="Unconditional Availability"
+        title="Contact"
+        subtitle="A direct way for brothers to reach me anytime for prayer, support, encouragement, accountability, or a real conversation."
+      />
+
+      <div className="contactHero">
+        <div className="contactMainCard">
+          <div className="contactIconWrap"><PhoneCall size={34} /></div>
+          <div className="smallLabel">Day or Night</div>
+          <h2>I will pick up the phone.</h2>
+          <p>
+            Mental health, relationship problems, academic stress, faith struggles, recent difficulties, or just needing to vent — reach out any time. No topic is off-limits, and nothing leaves our conversation.
+          </p>
+          <a className="phoneButton" href="tel:+18285780262">
+            <PhoneCall size={20} />
+            <span>Call or Text: (828) 578-0262</span>
+          </a>
+        </div>
+
+        <div className="contactSideStack">
+          <div className="contactMiniCard">
+            <div className="contactStep">1</div>
+            <div>
+              <h3>Always Available</h3>
+              <p>
+                If you are struggling, stressed, questioning your faith, or simply need someone to talk to, please reach out. I will answer with zero judgment.
+              </p>
+            </div>
+          </div>
+
+          <div className="contactMiniCard">
+            <div className="contactStep">2</div>
+            <div>
+              <h3>No Topic Off-Limits</h3>
+              <p>
+                We can talk through mental health, personal struggles, relationships, school pressure, spiritual questions, or anything weighing on you.
+              </p>
+            </div>
+          </div>
+
+          <div className="contactMiniCard">
+            <div className="contactStep">3</div>
+            <div>
+              <h3>Brother to Brother</h3>
+              <p>
+                The goal is simple: be present, listen well, encourage growth, and help each brother feel supported through every season of college life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="contactBottomCard mt24">
+        <div className="cardTopline"><MessageCircle size={17} /> Open Conversation</div>
+        <h2>Reach out before things feel too heavy.</h2>
+        <p>
+          You do not need to have the perfect words or a serious emergency to call. Sometimes the most important step is simply talking to someone who will listen, care, and keep the conversation between us.
+        </p>
+      </div>
+    </PageShell>
+  )
+}
+
 function AppStyles() {
   return (
     <style>{`
@@ -630,12 +701,12 @@ function AppStyles() {
       .brandLogo img { width: 43px; height: 43px; object-fit: contain; }
       .brandTitle { font-size: 13px; font-weight: 800; letter-spacing: .24em; color: var(--blue); text-transform: uppercase; }
       .brandSub { margin-top: 4px; color: var(--muted); font-size: 13px; white-space: nowrap; }
-      .nav { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: rgba(255,255,255,0.055); padding: 9px; border-radius: 999px; box-shadow: 0 18px 60px rgba(0,0,0,0.22); }
-      .nav button { border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; color: #d5dfec; background: transparent; padding: 11px 15px; border-radius: 999px; font-weight: 700; transition: .18s ease; }
+      .nav { display: flex; align-items: center; gap: 14px; border: 1px solid var(--line); background: rgba(255,255,255,0.055); padding: 10px 12px; border-radius: 999px; box-shadow: 0 18px 60px rgba(0,0,0,0.22); }
+      .nav button { border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; color: #d5dfec; background: transparent; padding: 11px 18px; border-radius: 999px; font-weight: 700; transition: .18s ease; }
       .nav button:hover { background: rgba(255,255,255,0.09); color: white; }
       .nav button.activeNav { background: white; color: #07111f; }
       .mobileCurrent { display: none; color: var(--muted); border: 1px solid var(--line); background: rgba(255,255,255,0.06); padding: 10px 14px; border-radius: 999px; font-weight: 700; }
-      .mobileNav { display: none; width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 14px; overflow-x: auto; gap: 8px; }
+      .mobileNav { display: none; width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 14px; overflow-x: auto; gap: 12px; }
       .mobileNav button { white-space: nowrap; border: 1px solid var(--line); background: rgba(255,255,255,0.055); color: var(--muted); padding: 10px 13px; border-radius: 999px; font-weight: 700; }
       .mobileNav button.activeNav { background: white; color: #07111f; }
       main { position: relative; z-index: 1; }
@@ -738,13 +809,30 @@ function AppStyles() {
         max-height: none;
       }.logoShowcase h2 { margin-top: 6px; }
       .logoShowcase p { margin-top: 8px; }
+      .contactHero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; align-items: stretch; }
+      .contactMainCard, .contactMiniCard, .contactBottomCard { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035)); box-shadow: 0 24px 90px rgba(0,0,0,0.28); backdrop-filter: blur(18px); }
+      .contactMainCard { position: relative; overflow: hidden; border-radius: 36px; padding: 38px; min-height: 500px; display: flex; flex-direction: column; justify-content: center; }
+      .contactMainCard::before { content: ''; position: absolute; width: 280px; height: 280px; right: -80px; top: -80px; border-radius: 999px; background: rgba(143,211,255,0.14); filter: blur(52px); }
+      .contactIconWrap { position: relative; width: 72px; height: 72px; border-radius: 24px; border: 1px solid rgba(143,211,255,0.24); background: rgba(143,211,255,0.11); color: var(--blue); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+      .contactMainCard h2 { position: relative; margin: 14px 0 0; font-size: clamp(38px, 5vw, 62px); line-height: 1; letter-spacing: -.055em; max-width: 650px; }
+      .contactMainCard p { position: relative; color: #bfccdc; line-height: 1.75; font-size: 18px; max-width: 700px; margin: 22px 0 0; }
+      .phoneButton { position: relative; margin-top: 30px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: fit-content; text-decoration: none; color: #07111f; background: linear-gradient(135deg, #ffffff, #dff4ff); padding: 15px 20px; border-radius: 999px; font-weight: 850; box-shadow: 0 16px 40px rgba(143,211,255,0.16); transition: .2s ease; }
+      .phoneButton:hover { transform: translateY(-2px); }
+      .contactSideStack { display: grid; gap: 16px; }
+      .contactMiniCard { border-radius: 30px; padding: 24px; display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; }
+      .contactStep { width: 48px; height: 48px; border-radius: 999px; background: rgba(143,211,255,0.13); border: 1px solid rgba(143,211,255,0.22); color: var(--blue); display: flex; align-items: center; justify-content: center; font-size: 21px; font-weight: 850; }
+      .contactMiniCard h3 { margin: 2px 0 0; font-size: 24px; letter-spacing: -.035em; }
+      .contactMiniCard p { margin: 10px 0 0; color: #bfccdc; line-height: 1.65; font-size: 16px; }
+      .contactBottomCard { border-radius: 32px; padding: 30px; }
+      .contactBottomCard h2 { margin: 16px 0 0; font-size: 32px; letter-spacing: -.04em; }
+      .contactBottomCard p { margin: 12px 0 0; color: #bfccdc; line-height: 1.75; font-size: 17px; max-width: 900px; }
       @media (max-width: 980px) {
         .nav { display: none; }
         .mobileCurrent, .mobileNav { display: flex; }
         .headerInner { min-height: 72px; }
         .brand { min-width: 0; }
         .brandText { display: none; }
-        .heroContent, .currentStudyCard, .aboutHero, .gridTwo { grid-template-columns: 1fr; }
+        .heroContent, .currentStudyCard, .aboutHero, .gridTwo, .contactHero { grid-template-columns: 1fr; }
         .heroVisual { min-height: 300px; }
         .statGrid, .principleGrid, .bookGrid { grid-template-columns: repeat(2, 1fr); }
         .calendarGrid, .dayLabels { gap: 6px; }
@@ -766,6 +854,10 @@ function AppStyles() {
         .innerTabs { width: 100%; border-radius: 22px; flex-direction: column; }
         .currentStudyLeft h2, .aboutText h2 { font-size: 34px; }
         .headshotFrame img { min-height: 340px; }
+        .contactMainCard { min-height: auto; padding: 26px; }
+        .contactMiniCard { grid-template-columns: 44px 1fr; padding: 20px; }
+        .contactStep { width: 40px; height: 40px; font-size: 18px; }
+        .phoneButton { width: 100%; }
         .logoShowcase {
           min-height: 520px;
           display: flex;
@@ -806,6 +898,7 @@ export default function App() {
       case 'calendar': return <CalendarPage />
       case 'scripture': return <ScripturePage currentStudy={currentStudy} />
       case 'about': return <AboutPage />
+      case 'contact': return <ContactPage />
       default: return <HomePage setActivePage={setActivePage} currentStudy={currentStudy} />
     }
   }
