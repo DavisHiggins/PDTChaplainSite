@@ -329,7 +329,8 @@ function HomePage({ setActivePage, currentStudy }) {
         <div className="heroContent">
           <div className="heroText">
             <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Chaplain</div>
-            <h1>Faith, brotherhood, and accountability.</h1>
+            <h1>Official website for the Chaplain of Phi Delta Theta</h1>
+            <div className="heroSubTitle">Faith, brotherhood, and accountability.</div>
             <p className="heroLead">
               A centralized home for weekly Bible study, scripture planning, and spiritual leadership within Phi Delta Theta at UNC Charlotte.
             </p>
@@ -536,7 +537,7 @@ function AboutPage() {
           <div className="smallLabel">Chaplain · VP of Philanthropy</div>
           <h2>Davis Higgins</h2>
           <p>
-            This site was designed to bring structure, consistency, and professionalism to the Chaplain role. My goal is to make Bible study easy to follow, spiritually meaningful, and genuinely useful for brothers navigating college, pressure, leadership, and personal growth.
+            This site was designed to bring structure, consistency, and professionalism to the Chaplain role. My goal is to make Bible study easy to follow, spiritually meaningful, and genuinely useful for brothers navigating college, pressure, leadership, and personal growth. I understand the difficulties that come with balancing school, work, family, a social life, hobbies, and a relationship with Jesus, especially while trying to excel in all of these aspects. This period of life is filled with uncertainty, stress, and unwanted anxiety. Fortunately, through faith and trust in our Savior Jesus Christ, our time in college can be enjoyed, appreciated, and spark personal growth you can take with you throughout the rest of life.
           </p>
           <div className="aboutTags">
             <span>Faith</span><span>Discipline</span><span>Accountability</span><span>Brotherhood</span>
@@ -617,8 +618,9 @@ function AppStyles() {
       .heroGlowOne { width: 320px; height: 320px; background: rgba(143,211,255,0.18); left: -90px; top: -100px; }
       .heroGlowTwo { width: 360px; height: 360px; background: rgba(0,80,53,0.28); right: -90px; bottom: -150px; }
       .heroContent { position: relative; display: grid; grid-template-columns: 1.12fr .88fr; gap: 42px; align-items: center; }
-      .heroBadge, .eyebrow, .cardTopline { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(143,211,255,0.22); background: rgba(143,211,255,0.095); color: #bde8ff; border-radius: 999px; padding: 9px 13px; font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+      .heroBadge, .eyebrow, .cardTopline { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(143,211,255,0.22); background: rgba(143,211,255,0.095); color: #bde8ff; border-radius: 999px; padding: 9px 13px; font-size: 12px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; }
       .heroText h1 { margin: 22px 0 0; max-width: 780px; font-size: clamp(44px, 7vw, 78px); line-height: .96; letter-spacing: -0.055em; font-weight: 850; }
+      .heroSubTitle { margin-top: 14px; color: var(--blue); font-size: 16px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
       .heroLead { margin: 24px 0 0; max-width: 690px; color: #c7d4e5; font-size: 19px; line-height: 1.8; }
       .heroChips, .aboutTags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
       .heroChips span, .aboutTags span { border: 1px solid var(--line); background: rgba(255,255,255,0.06); color: #dbe7f4; border-radius: 999px; padding: 9px 13px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .17em; }
@@ -634,7 +636,7 @@ function AppStyles() {
       .smallLabel { color: var(--blue); font-size: 12px; text-transform: uppercase; letter-spacing: .22em; font-weight: 850; }
       .crestInfo h3 { margin: 9px 0 6px; font-size: 25px; }
       .crestInfo p { margin: 0; color: var(--muted); }
-      .unccWatermark { position: absolute; width: min(72%, 420px); opacity: .18; filter: drop-shadow(0 24px 80px rgba(0,0,0,0.35)); }
+      .unccWatermark { position: absolute; width: min(72%, 420px); opacity: .28; filter: brightness(0) saturate(100%) invert(78%) sepia(28%) saturate(730%) hue-rotate(176deg) brightness(105%) contrast(101%) drop-shadow(0 24px 80px rgba(0,0,0,0.35)); }
       .statGrid { margin-top: 22px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
       .statCard { border-radius: 26px; padding: 22px; }
       .statCard div { font-size: 24px; font-weight: 850; letter-spacing: -.03em; }
@@ -703,7 +705,9 @@ function AppStyles() {
       .aboutText { padding: 34px; display: flex; flex-direction: column; justify-content: center; }
       .aboutText h2 { margin: 12px 0 0; font-size: 48px; letter-spacing: -.05em; }
       .aboutText p { color: #bfccdc; line-height: 1.8; font-size: 17px; max-width: 720px; }
-      .logoShowcase img { max-width: 190px; max-height: 90px; object-fit: contain; margin-bottom: 14px; }
+      .logoShowcase img { max-width: 190px; max-height: 90px; object-fit: contain; margin: 0 0 4px; filter: brightness(0) saturate(100%) invert(78%) sepia(28%) saturate(730%) hue-rotate(176deg) brightness(105%) contrast(101%); }
+      .logoShowcase h2 { margin-top: 6px; }
+      .logoShowcase p { margin-top: 8px; }
       @media (max-width: 980px) {
         .nav { display: none; }
         .mobileCurrent, .mobileNav { display: flex; }
