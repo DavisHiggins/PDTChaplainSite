@@ -554,7 +554,16 @@ function AboutPage() {
           <img
             src={pdtShield}
             alt="Phi Delta Theta shield"
-            className="aboutSectionShield"
+            style={{
+              width: '120px',
+              height: 'auto',
+              maxWidth: '120px',
+              maxHeight: '70px',
+              objectFit: 'contain',
+              objectPosition: 'left center',
+              display: 'block',
+              marginBottom: '150px',
+            }}
           />
           <h2>Built on Brotherhood</h2>
           <p>
@@ -562,7 +571,20 @@ function AboutPage() {
           </p>
         </div>
         <div className="glassCard largePad logoShowcase">
-          <img src={pdtLetters} alt="Phi Delta Theta letters" />
+          <img
+            src={pdtLetters}
+            alt="Phi Delta Theta letters"
+            style={{
+              width: '120px',
+              height: 'auto',
+              maxWidth: '120px',
+              maxHeight: '70px',
+              objectFit: 'contain',
+              objectPosition: 'left center',
+              display: 'block',
+              marginBottom: '150px',
+            }}
+          />
           <h2>NC Epsilon · UNC Charlotte</h2>
           <p>
             The NC Epsilon chapter represents Phi Delta Theta at UNC Charlotte. This website is designed as a practical resource for the chapter: a place to check the schedule, see the weekly scripture, and understand the broader mission behind the role.
