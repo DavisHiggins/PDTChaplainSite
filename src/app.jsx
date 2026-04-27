@@ -562,6 +562,7 @@ function AboutPage() {
               objectFit: 'contain',
               objectPosition: 'left center',
               display: 'block',
+              marginLeft: '-8px',
               marginBottom: '26px',
             }}
           />
@@ -583,7 +584,7 @@ function AboutPage() {
               objectPosition: 'left center',
               display: 'block',
               marginBottom: '26px',
-              filter: 'brightness(0) saturate(100%) invert(78%) sepia(30%) saturate(705%) hue-rotate(173deg) brightness(104%) contrast(101%)',
+              filter: 'brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(1442%) hue-rotate(174deg) brightness(95%) contrast(94%)',
             }}
           />
           <h2>NC Epsilon · UNC Charlotte</h2>
