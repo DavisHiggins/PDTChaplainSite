@@ -750,10 +750,10 @@ function AppStyles() {
         }
         .logoShowcase img,
           .logoShowcase .aboutSectionShield {
-            width: 150px !important;
-            height: auto !important;
-            max-width: 150px !important;
-            max-height: 72px !important;
+            width: 20px !important;
+            height: 20 !important;
+            max-width: 50px !important;
+            max-height: 50px !important;
             object-fit: contain;
             object-position: left center;
             display: block;
