@@ -329,7 +329,7 @@ function HomePage({ setActivePage, currentStudy }) {
         <div className="heroContent">
           <div className="heroText">
             <div className="heroBadge"><Cross size={16} /> Phi Delta Theta · NC Epsilon · Chaplain</div>
-            <h1>Faith, brotherhood, and accountability | .</h1>
+            <h1>Faith, brotherhood, and accountability.</h1>
             <p className="heroLead">
               A centralized home for weekly Bible study, scripture planning, and spiritual leadership within Phi Delta Theta at UNC Charlotte.
             </p>
@@ -550,7 +550,7 @@ function AboutPage() {
 
       <div className="gridTwo mt24">
         <div className="glassCard largePad">
-          <div className="cardTopline"><Sword size={17} /> Phi Delta Theta</div>
+          <div className="cardTopline"><Shield size={17} /> Phi Delta Theta</div>
           <h2>Built on principled brotherhood.</h2>
           <p>
             Phi Delta Theta is rooted in the Cardinal Principles of Friendship, Sound Learning, and Rectitude. This Chaplain structure reinforcres those values through consistent faith-based discussion, encouragement, and accountability.
